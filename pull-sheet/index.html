@@ -90,7 +90,7 @@ console.log($product)
             $writepath2 = '_data/' + $resource + '.json';
 
             repo.write($branch,$writepath, $yaml_dump, 'Save', function(err) { });
-            repo.write($branch,$writepath2, JSON.stringify($product), 'Save Json', function(err) { });
+            repo.write($branch,$writepath2, $product, 'Save Json', function(err) { });
 
             console.log("writing 1:" + $writepath);
             repo.getTree($branch + '?recursive=true', function(err, tree) {
