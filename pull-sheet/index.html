@@ -60,7 +60,8 @@ title: Update Spreadsheet
       });
 
       $product = tabletop.sheets($resource).all();
-console.log(JSON.parse($product))
+//debugger
+//console.log(JSON.parse($product))
       $count = 0;
       $total_count = $product.length;
       $.each( tabletop.sheets($resource).all(), function(i, service) {
@@ -90,7 +91,7 @@ console.log(JSON.parse($product))
             $writepath2 = '_data/' + $resource + '.json';
 
             repo.write($branch,$writepath, $yaml_dump, 'Save', function(err) { });
-            repo.write($branch,$writepath2, $product, 'Save Json', function(err) { });
+            repo.write($branch,$writepath2, $products, 'Save Json', function(err) { });
 
             console.log("writing 1:" + $writepath);
             repo.getTree($branch + '?recursive=true', function(err, tree) {
