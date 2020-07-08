@@ -91,6 +91,7 @@ title: Update Spreadsheet
             $writepath2 = '_data/' + $resource + '.json';
 
             repo.write($branch,$writepath, $yaml_dump, 'Save', function(err) { });
+           console.log(JSON.stringify($products))
             repo.write($branch,$writepath2, $products, 'Save Json', function(err) { });
 
             console.log("writing 1:" + $writepath);
