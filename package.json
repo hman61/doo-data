@@ -1,0 +1,14 @@
+{
+  "name": "doo-data",
+  "version": "0.1.1",
+  "description": "Doo.ui Example Project",
+  "scripts": {
+    "start": "ws --spa index.html"
+  },
+  "author": "Henrik Javen",
+  "license": "Apache 2.0",
+  "repository": "https://doo-data.github.com/",
+  "devDependencies": {
+    "local-web-server": "^4.0.0"
+  }
+}
