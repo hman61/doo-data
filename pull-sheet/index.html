@@ -374,9 +374,9 @@ $count = 0;
             var repo = github.getRepo($org,$repo);
 
             $writepath = '_data/' + $resource + '.yaml';
-            $writepath2 = '_data/' + $resource + '.json';
+            $writepath2 = '_data/' + $resource + '2.json';
 
-            repo.write($branch,$writepath2, JSON.parse(xxx), 'Save MyJSON', function(err) { });
+            repo.write($branch,$writepath2, xxx, 'Save MyJSON', function(err) { });
      //      console.log(JSON.stringify($products))
        //     repo.write($branch,$writepath2, $products, 'Save Json', function(err) { });
 
