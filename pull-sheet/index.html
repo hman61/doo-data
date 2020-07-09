@@ -346,7 +346,10 @@ function arrayTranspose_(data) {
       $product = tabletop.sheets($resource).all();
 console.log('coolio', $product)
 let xxx = makeJSON_($product, {format:FORMAT_PRETTY}) 
-alert(xxx)
+//alert(xxx)
+$writepath2 = '_data/' + $resource + '2.json';
+repo.write($branch,$writepath2, '{"hello":"World"}', 'Save MyJSON', function(err) { });
+return
 $count = 0;
       $total_count = $product.length;
       $.each( tabletop.sheets($resource).all(), function(i, service) {
