@@ -1,1 +1,18 @@
-
+[
+    {
+        "href": "#intro",
+        "label": "Welcome!"
+    },
+    {
+        "href": "#one",
+        "label": "Who we are"
+    },
+    {
+        "href": "#two",
+        "label": "What we do"
+    },
+    {
+        "href": "#three",
+        "label": "About Us"
+    }
+]
