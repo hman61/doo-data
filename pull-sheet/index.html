@@ -345,8 +345,8 @@ function arrayTranspose_(data) {
 
       $product = tabletop.sheets($resource).all();
 console.log('coolio', $product)
-let x = makeJSON_($product, {format:FORMAT_PRETTY}) 
-alert(x)
+let xxx = makeJSON_($product, {format:FORMAT_PRETTY}) 
+alert(xxx)
 $count = 0;
       $total_count = $product.length;
       $.each( tabletop.sheets($resource).all(), function(i, service) {
@@ -365,7 +365,7 @@ $count = 0;
             $yaml_dump = jsyaml.dump($products);
 
 //            document.getElementById('source').value = $yaml_dump;
-            document.getElementById('source').value = x;
+            document.getElementById('source').value = JSON.stringify(xxx);
 
             // Grab the token from cookie
             $oAuthToken = Cookies.get('token');
@@ -376,7 +376,7 @@ $count = 0;
             $writepath = '_data/' + $resource + '.yaml';
             $writepath2 = '_data/' + $resource + '.json';
 
-            repo.write($branch,$writepath2, x, 'Save', function(err) { });
+            repo.write($branch,$writepath2, JSON.stringify(xxx), 'Save', function(err) { });
      //      console.log(JSON.stringify($products))
        //     repo.write($branch,$writepath2, $products, 'Save Json', function(err) { });
 
