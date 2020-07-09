@@ -346,6 +346,8 @@ function arrayTranspose_(data) {
       $product = tabletop.sheets($resource).all();
 console.log('coolio', $product)
 let xxx = makeJSON_($product, {format:FORMAT_PRETTY}) 
+document.getElementById('source').value = xxx;
+
 //alert(xxx)
 var github = new Github({token: $oAuthToken,auth: "oauth"});
             var repo = github.getRepo($org,$repo);
