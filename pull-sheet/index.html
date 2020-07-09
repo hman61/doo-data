@@ -347,8 +347,11 @@ function arrayTranspose_(data) {
 console.log('coolio', $product)
 let xxx = makeJSON_($product, {format:FORMAT_PRETTY}) 
 //alert(xxx)
+var github = new Github({token: $oAuthToken,auth: "oauth"});
+            var repo = github.getRepo($org,$repo);
+
 $writepath2 = '_data/' + $resource + '2.json';
-$repo.write($branch,$writepath2, '{"hello":"World"}', 'Save MyJSON', function(err) { });
+repo.write($branch,$writepath2, '{"hello":"World"}', 'Save MyJSON', function(err) { });
 return
 $count = 0;
       $total_count = $product.length;
