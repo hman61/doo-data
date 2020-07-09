@@ -365,7 +365,7 @@ $count = 0;
             $yaml_dump = jsyaml.dump($products);
 
 //            document.getElementById('source').value = $yaml_dump;
-            document.getElementById('source').value = JSON.stringify(xxx);
+            document.getElementById('source').value = xxx;
 
             // Grab the token from cookie
             $oAuthToken = Cookies.get('token');
@@ -376,7 +376,7 @@ $count = 0;
             $writepath = '_data/' + $resource + '.yaml';
             $writepath2 = '_data/' + $resource + '.json';
 
-            repo.write($branch,$writepath2, JSON.stringify(xxx), 'Save MyJSON', function(err) { });
+            repo.write($branch,$writepath2, xxx, 'Save MyJSON', function(err) { });
      //      console.log(JSON.stringify($products))
        //     repo.write($branch,$writepath2, $products, 'Save Json', function(err) { });
 
