@@ -10,7 +10,7 @@ title: Update Spreadsheet
 <script type="text/javascript" src="https://contrafabulists-toolbox.github.io/master/javascript/tabletop.js"></script>
 <script type="text/javascript" src="https://contrafabulists-toolbox.github.io/master/javascript/js-yaml.min.js"></script>
 <script type="text/javascript" src="https://contrafabulists-toolbox.github.io/master/javascript/github.js"></script>
-
+<script src="https://gist.github.com/pamelafox/1878143.js"></script>
 <h1>Update</h1>
 <script type="text/javascript">
 
@@ -61,7 +61,9 @@ title: Update Spreadsheet
 
       $product = tabletop.sheets($resource).all();
 console.log('coolio', $product)
-      $count = 0;
+let x = makeJSON_($product, {format:FORMAT_PRETTY}) 
+alert(x)
+$count = 0;
       $total_count = $product.length;
       $.each( tabletop.sheets($resource).all(), function(i, service) {
 
