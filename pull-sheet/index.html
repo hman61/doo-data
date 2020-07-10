@@ -344,20 +344,23 @@ function arrayTranspose_(data) {
       });
 
       $product = tabletop.sheets($resource).all();
-console.log('coolio', $product)
-let xxx = makeJSON_($product, {format:FORMAT_PRETTY}) 
-document.getElementById('source').value = xxx;
+//console.log('coolio', $product)
+//let xxx = makeJSON_($product, {format:FORMAT_PRETTY}) 
+//document.getElementById('source').value = xxx;
 
 //alert(xxx)
+/*
 var github = new Github({token: $oAuthToken,auth: "oauth"});
             var repo = github.getRepo($org,$repo);
 
 $writepath2 = '_data/' + $resource + '.json';
 repo.write($branch,$writepath2, xxx.trim(), 'Save MyJSON', function(err) { });
 return
+*/
 $count = 0;
       $total_count = $product.length;
       $.each( tabletop.sheets($resource).all(), function(i, service) {
+
 
           $p = {};
           $.each(service, function($key, $value) {
@@ -370,10 +373,11 @@ $count = 0;
           //console.log($count + ' == ' + $total_count);
           if($count==$total_count)
             {
-            $yaml_dump = jsyaml.dump($products);
+            $yaml_dump = makeJSON_($product, {format:FORMAT_PRETTY}) 
+    //jsyaml.dump($products);
 
-//            document.getElementById('source').value = $yaml_dump;
-            document.getElementById('source').value = xxx;
+            document.getElementById('source').value = $yaml_dump;
+//            document.getElementById('source').value = xxx;
 
             // Grab the token from cookie
             $oAuthToken = Cookies.get('token');
@@ -381,10 +385,10 @@ $count = 0;
             var github = new Github({token: $oAuthToken,auth: "oauth"});
             var repo = github.getRepo($org,$repo);
 
-            $writepath = '_data/' + $resource + '.yaml';
-            $writepath2 = '_data/' + $resource + '2.json';
+ //           $writepath = '_data/' + $resource + '.yaml';
+            $writepath = '_data/' + $resource + '3.json';
 
-            repo.write($branch,$writepath2, xxx, 'Save MyJSON', function(err) { });
+            repo.write($branch,$writepath, $yaml_dump, 'Save MyJSON3', function(err) { });
      //      console.log(JSON.stringify($products))
        //     repo.write($branch,$writepath2, $products, 'Save Json', function(err) { });
 
