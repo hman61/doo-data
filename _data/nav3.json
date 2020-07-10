@@ -1,7 +1,7 @@
 [
     {
         "href": "#intro",
-        "label": "Welcome!"
+        "label": "Welcome!!"
     },
     {
         "href": "#one",
@@ -18,9 +18,5 @@
     {
         "href": "#four",
         "label": "Download"
-    },
-    {
-        "href": "#five",
-        "label": "Address"
     }
 ]
