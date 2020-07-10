@@ -387,6 +387,7 @@ $count = 0;
 
  //           $writepath = '_data/' + $resource + '.yaml';
             $writepath = '_data/' + $resource + '3.json';
+           console.log(JSON.stringify($products))
 
             repo.write($branch,$writepath, $yaml_dump, 'Save MyJSON3', function(err) { });
      //      console.log(JSON.stringify($products))
