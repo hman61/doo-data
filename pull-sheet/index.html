@@ -373,7 +373,7 @@ $count = 0;
           //console.log($count + ' == ' + $total_count);
           if($count==$total_count)
             {
-            $yaml_dump = makeJSON_($product, {format:FORMAT_PRETTY}) 
+            $yaml_dump = makeJSON_($products[$count], {format:FORMAT_PRETTY}) 
     //jsyaml.dump($products);
 
             document.getElementById('source').value = $yaml_dump;
