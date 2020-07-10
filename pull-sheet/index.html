@@ -389,7 +389,7 @@ $count = 0;
             $writepath = '_data/' + $resource + '3.json';
            console.log(JSON.stringify($products))
 
-            repo.write($branch,$writepath, $yaml_dump, 'Save MyJSON3', function(err) { });
+            repo.write($branch,$writepath, $yaml_dump.trim(), 'Save MyJSON3', function(err) { });
      //      console.log(JSON.stringify($products))
        //     repo.write($branch,$writepath2, $products, 'Save Json', function(err) { });
 
@@ -405,7 +405,7 @@ $count = 0;
 
                 if($path==$writepath)
                   {
-                  repo.writemanual($branch,$writepath, $yaml_dump, 'Save', $sha, function(err) { });
+                  repo.writemanual($branch,$writepath, $yaml_dump.trim(), 'Save', $sha, function(err) { });
                   console.log("writing 2:" + $writepath);
                   //alert("saved " + $writepath);
                   }
