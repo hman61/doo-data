@@ -80,7 +80,7 @@ title: Update Spreadsheet
           //console.log($count + ' == ' + $total_count);
           if($count==$total_count)
             {
-            $json_dump = JSON.stringify(object, null, 4) //makeJSON_($product, {format:FORMAT_PRETTY}) 
+            $json_dump = JSON.stringify($product, null, 4) 
 
             document.getElementById('source').value = $json_dump;
 
