@@ -10,5 +10,8 @@
   "repository": "https://doo-data.github.com/",
   "devDependencies": {
     "local-web-server": "^4.0.0"
+  },
+  "dependencies": {
+    "google-spreadsheet": "^3.0.11"
   }
 }
