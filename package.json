@@ -12,6 +12,7 @@
     "local-web-server": "^4.0.0"
   },
   "dependencies": {
-    "google-spreadsheet": "^3.0.11"
+    "google-spreadsheet": "^3.0.11",
+    "papaparse": "^5.2.0"
   }
 }
