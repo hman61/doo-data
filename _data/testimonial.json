@@ -9,12 +9,12 @@
         "id": "2",
         "img": "images/pic02.jpg",
         "name": "Amy Smith",
-        "title": "Designer at RoadRunner Inc"
+        "title": "Designer at RoadRunner Inc."
     },
     {
         "id": "3",
         "img": "images/pic03.jpg",
         "name": "John Doe",
-        "title": "CEO of Coyte"
+        "title": "CEO of Coyote Inc."
     }
 ]
