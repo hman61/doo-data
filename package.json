@@ -9,7 +9,7 @@
   "license": "Apache 2.0",
   "repository": "https://doo-data.github.com/",
   "devDependencies": {
-    "local-web-server": "^4.0.0"
+    "local-web-server": "^5.4.0"
   },
   "dependencies": {
     "google-spreadsheet": "^5.0.2",
